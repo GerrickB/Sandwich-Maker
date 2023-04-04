@@ -11,6 +11,10 @@ const returnRandMeat = () => {
 
 };
 
+const returnRandSalad = () => {
+
+};
+
 // Factory object
 const sandwichFactory = () => {
 
