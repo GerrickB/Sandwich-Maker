@@ -20,6 +20,13 @@ const returnRandSalad = () => {
 };
 
 // Factory object
-const sandwichFactory = () => {
+const sandwichFactory = (orderNum, bread, cheese, meat, salad) => {
+  return {
+    _orderNum: orderNum,
+    _bread: bread,
+    _cheese: cheese,
+    _meat: meat,
+    _salad: salad,
+  }
 
 };
