@@ -27,6 +27,15 @@ const sandwichFactory = (orderNum, bread, cheese, meat, salad) => {
     _cheese: cheese,
     _meat: meat,
     _salad: salad,
+    showOrder() {
+      console.log(`You have ordered a ${this._bread} bread with ${this._cheese} cheese, ${this._meat}, and ${this._salad}`);
+    }
   }
-
 };
+
+let bread = returnRandBread();
+let cheese = returnRandCheese();
+let meat = returnRandMeat();
+let salad = returnRandSalad();
+const newSandwich = sandwichFactory(1, bread, cheese, meat, salad);
+newSandwich.showOrder();
